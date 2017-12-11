@@ -18,4 +18,14 @@ while True:
 		else:
 			print('密碼錯誤!')
 	else:
-		print('找不到這個帳號!')
+		print('找不到這個帳號! ')
+		ans = input('要辦帳號嗎? (Y/N)')
+		if ans == 'Y':
+			new_username = input('請輸入帳號: ')
+			new_password = input('密碼: ')
+			acc[new_username] = new_password
+			print('成功辦完帳號囉!')
+			break
+		else:
+			print('掰掰!')
+			break
